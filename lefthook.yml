@@ -1,0 +1,12 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://lefthook.dev/configuration/
+#
+
+pre-commit:
+  parallel: false
+  commands:
+    prettier:
+      run: pnpm prettier {staged_files}
+      stage_fixed: true
