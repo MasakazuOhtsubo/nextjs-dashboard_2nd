@@ -2,12 +2,17 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "build-storybook": "storybook build",
     "dev": "next dev --turbopack",
     "lint": "eslint . --ext .cjs,.js,.jsx,.mjs,.ts,.tsx",
     "prettier": "prettier --write --ignore-unknown",
     "prettier:check": "prettier --check --ignore-unknown .",
     "start": "next start",
+    "storybook": "storybook dev -p 6006",
     "test": "pnpm run lint && pnpm run prettier:check"
+  },
+  "resolutions": {
+    "@storybook/react": "^8.6.14"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -27,6 +32,11 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-interactions": "^8.6.14",
+    "@storybook/addon-links": "^8.6.14",
+    "@storybook/nextjs": "^8.6.14",
+    "@storybook/types": "^8.6.14",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
@@ -37,6 +47,7 @@
     "eslint-config-prettier": "9.0.0",
     "lefthook": "^1.11.4",
     "prettier": "3.0.3",
-    "prettier-plugin-tailwindcss": "0.5.4"
+    "prettier-plugin-tailwindcss": "0.5.4",
+    "storybook": "^8.6.14"
   }
 }
